@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink Dark Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display" id="display">
+          <div class="previous-operation" id="prevDisplay"></div>
+          <div class="current-value" id="currentDisplay">0</div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn small" onclick="pressButton('clr')">clr</button>
+          <button class="btn small" onclick="pressButton('DEL')">DEL</button>
+          <button class="btn small" onclick="pressButton('%')">%</button>
+          <button class="btn small" onclick="pressButton('/')">/</button>
+
+          <button class="btn" onclick="pressButton('7')">7</button>
+          <button class="btn" onclick="pressButton('8')">8</button>
+          <button class="btn" onclick="pressButton('9')">9</button>
+          <button class="btn small" onclick="pressButton('*')">*</button>
+
+          <button class="btn" onclick="pressButton('4')">4</button>
+          <button class="btn" onclick="pressButton('5')">5</button>
+          <button class="btn" onclick="pressButton('6')">6</button>
+          <button class="btn small" onclick="pressButton('-')">-</button>
+
+          <button class="btn" onclick="pressButton('1')">1</button>
+          <button class="btn" onclick="pressButton('2')">2</button>
+          <button class="btn" onclick="pressButton('3')">3</button>
+          <button class="btn small" onclick="pressButton('+')">+</button>
+
+          <button class="btn" onclick="pressButton('0')">0</button>
+          <button class="btn" onclick="pressButton('.')">.</button>
+          <button class="btn equal" onclick="pressButton('=')">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

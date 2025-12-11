@@ -1,0 +1,98 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #e6b8ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: #111;
+        padding: 30px;
+        border-radius: 25px;
+        box-shadow: 10px 10px 25px #000, -10px -10px 25px #333;
+      }
+
+      .calculator {
+        width: 270px;
+        padding: 20px;
+        border-radius: 20px;
+        background: #1a1a1a;
+        box-shadow: inset 5px 5px 12px #0d0d0d, inset -5px -5px 12px #222;
+      }
+
+      .display {
+        height: 80px;
+        border-radius: 15px;
+        background: #222;
+        color: white;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 22px;
+        box-shadow: inset 5px 5px 10px #111, inset -5px -5px 10px #333;
+        overflow: hidden;
+      }
+
+      .previous-operation {
+        font-size: 16px;
+        color: #888;
+        min-height: 20px;
+      }
+
+      .current-value {
+        font-size: 40px;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .btn {
+        background: #1a1a1a;
+        border: none;
+        height: 55px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 5px 5px 12px #0d0d0d, -5px -5px 12px #222;
+        transition: 0.15s;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+      }
+
+      .btn:active {
+        box-shadow: inset 4px 4px 8px #111, inset -4px -4px 8px #333;
+      }
+
+      .small {
+        font-size: 14px;
+      }
+
+      .equal {
+        background: #ff79c6;
+        color: #111;
+        grid-column: span 2;
+        width: 100%;
+        border-radius: 40px;
+        box-shadow: 5px 5px 12px #b25f8f, -5px -5px 12px #ff9acc;
+      }
+
+      .equal:active {
+        box-shadow: inset 4px 4px 8px #c06094, inset -4px -4px 8px #ff9acc;
+      }
